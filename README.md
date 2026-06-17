@@ -6,37 +6,23 @@
 
 ## 适用设备
 
+原生编译go文件，理论上支持所有HarmonyOS
 - HarmonyOS 6.1+ / OpenHarmony 6.1+
 - ARM64 架构（华为 MateBook Pro、鸿蒙平板等）
 
 ## 快速开始
 
-### 方式一：下载预编译版本
+### 方式一：下载已编译版本
 
-1. 下载 `xray-harmonyos-arm64.tar.gz`
-2. 解压并运行安装脚本：
+因为我正常要用所以每次版本更新后编译版本都固定上传
 
-```bash
-tar xzf xray-harmonyos-arm64.tar.gz
-cd xray-harmonyos
-./install.sh
-```
-
-脚本会自动安装签名工具、签名 xray、下载 geoip/geosite 数据文件。
-
-3. 编辑配置文件：
-
-```bash
-nano config.json
-```
-
-4. 启动：
+1. 右侧下载 `Xray-core-harmonyos-xxxx-arm64`
+2. 填写config.json配置文件
+3. 解压并运行以下代码：
 
 ```bash
 ./xray run -c config.json
 ```
-
-5. 浏览器设置 SOCKS5 代理 `127.0.0.1:10808` 即可。
 
 ### 方式二：自行编译
 
