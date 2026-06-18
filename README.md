@@ -20,8 +20,10 @@
 2. 填写config.json配置文件
 3. 解压并运行以下代码：
 
+
 ```bash
-./xray run -c config.json
+binary-sign-tool ./xray 2>/dev/null || true
+./xray run -c xray_config.json
 ```
 
 ### 方式二：自行编译
